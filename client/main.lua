@@ -1,13 +1,4 @@
-QBCore = nil
-
-Citizen.CreateThread(function()
-	while QBCore == nil do
-		TriggerEvent("QBCore:GetObject", function(library) 
-			QBCore = library 
-		end)
-		Citizen.Wait(0)
-	end
-end)
+QBCore = exports['qb-core']:GetCoreObject()
 
 Citizen.CreateThread(function()
     while true do
