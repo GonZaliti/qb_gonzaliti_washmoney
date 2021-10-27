@@ -1,8 +1,4 @@
-QBCore = nil
-
-TriggerEvent("QBCore:GetObject", function(library) 
-	QBCore = library 
-end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 local Lista = {
     ["markedbills"] = "markedbills"
